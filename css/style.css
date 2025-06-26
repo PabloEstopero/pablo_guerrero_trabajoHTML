@@ -1,0 +1,209 @@
+:root {
+    --background-primary: ;
+    --background-secundary: #9F0019;
+    --background-light: ;
+    --black: #000;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/***-***-***-- H E A D E R --***-***-***/
+header {
+    background-color: #FC0028;
+}
+
+
+/***-***-***-- S E C T I O N --***-***-***/
+section {
+    background-color: #f1ccd1;
+}
+
+
+
+/***-***-***-- F O O T E R --***-***-***/
+footer {
+    background: linear-gradient(to right,
+            #c9013d 0%,
+            #E76176 30%,
+            #E75F74 50%,
+            #E76176 70%,
+            #c9013d 100%);
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Lista contactos */
+
+.ul-direccion {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    
+
+}
+
+.icon-direccion-footer {
+    position: absolute;
+
+}
+
+.li-direccion a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    
+    margin: 1.5rem;
+}
+
+.li-direccion {
+    padding: 0.4rem;
+}
+
+/* logo */
+
+.fantasma {
+    width: 80px;
+    height: 80px;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+/* Redes Sociales */
+
+.redes{
+    
+   
+}
+.ul-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem;
+    max-width: 100%;
+    
+}
+
+.li-redes {
+    list-style: none;
+    
+
+}
+
+
+
+.li-redes img {
+    
+    width: 70px;
+    height: 70px;
+
+}
+
+
+/***-***-***-- M E D I A  Q U E R I E S --***-***-***/
+
+@media (max-width: 481px){
+    footer {
+        background: linear-gradient(to right,
+                #c9013d 10%,
+                #E75F74 70%,
+                #E76176 100%);
+
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    
+
+    .ul-redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin: 1rem;
+        
+    }
+    .li-redes a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .li-redes img {
+        display: block;
+        width: 50%;
+        height: auto;
+    }
+    .li-direccion a{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    footer {
+        background: linear-gradient(to right,
+                #c9013d 10%,
+                #E75F74 70%,
+                #E76176 100%);
+        display: flex;
+        flex-direction: column;
+        
+       
+    }
+    
+    .icon-direccion-footer{
+        
+    }
+
+    .ul-direccion{
+        display: grid;
+        justify-content: center;
+        margin-left: 5rem;
+    }
+
+    .li-direccion a{
+    }
+
+    .footer-img{
+        display: none;
+    }
+
+    .ul-redes {
+        
+        margin: 0.8rem;
+    }
+
+    .li-redes img{
+        max-width: 55px;
+        height: auto;
+    }
+
+   
+}
