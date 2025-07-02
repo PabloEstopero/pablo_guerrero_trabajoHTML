@@ -1,10 +1,10 @@
 :root {
-    --background-primary: #E76176;
+    --background-primary: #e76176;
     --background-secundary: #E75F74;
     --background-light: #c9013d;
     --background-rose: #f0b6be;
     --background-nav: #F61F60;
-    --background-salmon:rgb(238, 141, 124);
+    --background-salmon: rgb(238, 141, 124);
 
     --black: #000;
     --white: #fff;
@@ -64,7 +64,7 @@ header {
     border: 2px solid var(--white);
     padding: 0.5rem;
     border-radius: 10px;
-    transition-duration: 0.3s;
+    transition: all .3s ease-in-out;
 
 }
 
@@ -90,11 +90,159 @@ header {
 
 
 /***-***-***-- S E C T I O N --***-***-***/
-h2{
-    font-size: clamp(30px, 4vw,50px);
+
+/* Contenido principal */
+.contenido {
+    min-height: 100vh;
+}
+
+.transicion-top {
+    width: 100%;
+    height: auto;
+
+
+}
+
+.transicion-top img {
+    rotate: 180deg;
+    width: 100%;
+
+
+
+
+
+}
+
+h2 {
+    font-size: clamp(25px, 4vw, 50px);
+    color: var(--background-light);
+    text-transform: uppercase;
+
+}
+
+.info p {
+    font-weight: bold;
+
+    color: var(--background-primary);
 }
 
 
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+
+
+.galeria-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0;
+    gap: 5rem;
+    width: 100%;
+
+}
+
+.galeria-logos img {
+    max-width: 450px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 9px;
+
+}
+
+.transicion-bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+
+.transicion-bottom img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+/* Contenido top ventas */
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    width: 100%;
+    height: auto;
+    
+   
+}
+
+.background-gradient {
+    background: linear-gradient(to bottom, var(--background-primary) 0%, var(--background-secundary)55%, var(--background-rose) 100%);
+}
+
+.top-ventas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 5rem;
+
+
+}
+
+.top-ventas img {
+    max-width: 450px;
+    height: auto;
+    border: 3px solid var(--background-nav);
+    border-radius: 5px;
+    background-color: var(--white);
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+
+
+}
+
+.top {
+    color: var(--white);
+
+    font-style: italic;
+    border-bottom: 2px solid var(--white);
+}
+
+.top-ventas img:hover {
+    transform: translateY(-10px);
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* Contenido Quienes Somos */
+
+.background-gradient-2 {
+    background: linear-gradient(to bottom, var(--background-rose) 0%, var(--white)100%);
+
+}
+
+div .quienes-somos {
+    margin: 5rem;
+    color: var(--background-nav);
+}
+
+.img-tienda-frikon {
+    max-width: 700px;
+    height: auto;
+    margin: 2rem;
+}
 
 /***-***-***-- F O O T E R --***-***-***/
 footer {
@@ -133,7 +281,7 @@ footer {
     font-weight: bold;
     text-decoration: none;
     margin: 1.5rem;
-    transition-duration: 0.2s;
+    transition: all .2s ease-in-out;
 }
 
 .li-direccion {
@@ -191,7 +339,7 @@ footer {
 
 @media (max-width: 481px) {
     header {
-        
+
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -205,7 +353,8 @@ footer {
 
     .logo-header img {
         border: 5px solid var(--white);
-        box-shadow: 0 0 12px 9px var(--background-rose);;
+        box-shadow: 0 0 12px 9px var(--background-rose);
+        ;
         border-radius: 10px;
 
     }
@@ -235,6 +384,7 @@ footer {
         transform: translateY(-20px);
         pointer-events: none;
         transition: opacity 0.4s, transform 0.4s;
+        z-index: 997;
 
     }
 
@@ -251,7 +401,7 @@ footer {
         border: none;
         padding: 0;
         border-radius: 0;
-        transition-duration: 0.3s;
+        transition: all .3s ease-in-out;
 
     }
 
@@ -277,6 +427,49 @@ footer {
         box-shadow: 0 0 12px 5px var(--background-rose);
     }
 
+    .transicion-top img {
+        height: auto;
+    }
+
+    .info {
+        margin-top: 3rem;
+
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .galeria-logos img {
+        max-width: 250px;
+
+    }
+
+    .top-ventas {
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+    .top-ventas img {
+        max-width: 250px;
+
+    }
+
+    .top {
+        font-size: 3rem;
+    }
+
+    .img-tienda-frikon {
+        max-width: 400px;
+
+    }
+
+    div .quienes-somos {
+        margin: 2rem;
+
+    }
+
 
 
     footer {
@@ -289,19 +482,18 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center
-        
-
     }
-    .footer-img img{
+
+    .footer-img img {
         display: none;
     }
 
-     .footer-img{
-        order:3;
+    .footer-img {
+        order: 3;
         font-weight: bold;
     }
-    
-    .footer-img p{
+
+    .footer-img p {
         font-size: 0.8rem;
     }
 
@@ -314,7 +506,7 @@ footer {
 
     .li-redes a {
         display: flex;
-        
+
     }
 
     .li-redes img {
@@ -326,6 +518,8 @@ footer {
     .li-direccion a {
         font-size: 0.8rem;
     }
+
+
 }
 
 
@@ -337,7 +531,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
         width: 100%;
     }
 
@@ -377,6 +571,7 @@ footer {
         transform: translateY(-20px);
         pointer-events: none;
         transition: opacity 0.4s, transform 0.4s;
+        z-index: 998;
 
     }
 
@@ -393,7 +588,7 @@ footer {
         border: none;
         padding: 0;
         border-radius: 0;
-        transition-duration: 0.3s;
+        transition: all .3s ease-in-out;
 
     }
 
@@ -428,6 +623,51 @@ footer {
         box-shadow: 0 0 12px 5px var(--background-rose);
     }
 
+    .transicion-top img {
+        height: auto;
+    }
+
+    .info {
+        margin-top: 2rem;
+    }
+
+    .galeria-logos img {
+        max-width: 250px;
+
+
+    }
+
+    .galeria-logos img {
+        max-width: 250px;
+
+
+    }
+
+    .top-ventas {
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+    .top-ventas img {
+        max-width: 250px;
+
+    }
+
+    .top {
+        font-size: 3.5rem;
+    }
+
+    .img-tienda-frikon {
+        max-width: 400px;
+
+    }
+
+    div .quienes-somos {
+        margin: 2rem;
+
+    }
+
 
     footer {
         background: linear-gradient(to right,
@@ -444,15 +684,16 @@ footer {
         margin-left: 5rem;
     }
 
-    .footer-img img{
+    .footer-img img {
         display: none;
     }
-    .footer-img{
-        order:3;
+
+    .footer-img {
+        order: 3;
         font-weight: bold;
-        
+
     }
-   
+
 
     .ul-redes {
 
