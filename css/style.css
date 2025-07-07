@@ -121,6 +121,9 @@ header {
 
 
 }
+.contenido-inicio{
+    background: linear-gradient(to bottom, var(--white) 0%, var(--background-rose)55%, var(--white) 100%)
+}
 
 
 
@@ -225,7 +228,7 @@ h2 {
 }
 
 .top {
-    font-size: 6rem;
+    font-size: 4rem;
     color: var(--white);
     font-style: italic;
     border-bottom: 2px solid var(--white);
@@ -250,12 +253,12 @@ div .quienes-somos {
     width: 70%;
     height: auto;
     color: var(--background-nav);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .img-tienda-frikon {
-    max-width: 50%;
-    width: 700px;
+    
+    width: 600px;
     height: auto;
     margin: 2rem;
     display: block;
@@ -542,6 +545,12 @@ div .quienes-somos {
 .contact-form input[type="submit"]:hover {
     background-color: var(--background-salmon);
     cursor: pointer;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid var(--background-light); 
 }
 
 
@@ -860,6 +869,9 @@ footer {
         font-size: 1rem;
 
     }
+    .descripcion-producto h3{
+        font-size: 1.2rem;
+    }
 
     .item-galeria-productos:hover {
         transform: none;
@@ -1132,13 +1144,13 @@ footer {
         height: 200px;
     }
 
-    .descripcion-producto p {
-        font-size: 1rem;
-
-    }
+    
 
     .descripcion-producto img {
         margin-top: 3rem;
+    }
+    .descripcion-producto h3{
+        font-size: 1.2rem;
     }
 
   
