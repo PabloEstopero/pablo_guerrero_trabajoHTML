@@ -1139,9 +1139,32 @@ footer {
         max-width: 60%;
     }
 
+
     .producto-img {
         width: 350px;
         height: 200px;
+    }
+
+    
+    .item-galeria-productos:hover {
+        transform: none;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .descripcion-producto {
+        transform: none;
+
+    }
+
+    .item-galeria-productos:hover .descripcion-producto {
+        transform: none;
+
+    }
+
+    .descripcion-producto img {
+        display: none;
+
     }
 
     
