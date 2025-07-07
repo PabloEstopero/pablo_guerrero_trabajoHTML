@@ -9,11 +9,7 @@
     <meta name="keywords"
         content="Frikon, cartas TCG, Pokémon, Magic, Yu-Gi-Oh!, artículos frikis, figuras, tienda online">
     <meta name="robots" content="index,follow">
-    <!--COLOCAR LA URL EXACTA DE CADA PAGINA 
-IMPORTANTE
-OOO
-OO
--->
+    <!--COLOCAR LA URL EXACTA DE CADA PAGINA-->
     <link rel="canonical" href="index.html">
     <link rel="icon" type="image/png" href="./images/index/logo-pestaña.png">
     <link rel="stylesheet" href="./css/style.css">
@@ -26,15 +22,16 @@ OO
         <div class="logo-header">
             <img src="./images/index/logo-frikon.png" alt="Logo Frikon" width="447" height="173">
         </div>
-        <!--Para tablet y movil creamos un menu hamburguesa-->
+
         <nav class="navbar">
+            <!--Para tablet y movil creamos un menu hamburguesa-->
             <input type="checkbox" id="check-menu" class="check-menu">
 
             <ul class="ul-navbar">
                 <li><a href="index.html" class="li-navbar item-navbar">Inicio</a></li>
                 <li><a href="./views/productos.html" class="li-navbar">Productos</a></li>
                 <li><a href="./views/contacto.html" class="li-navbar">Contacto</a></li>
-                <li><a href="" class="li-navbar">Presupuesto</a></li>
+                <li><a href="./views/presupuesto.html" class="li-navbar">Presupuesto</a></li>
             </ul>
             <label for="check-menu" class="label-check">
                 <img src="images/index/menu-kebab-vertical-svgrepo-com.svg" alt="logo menu hamburguesa"
@@ -44,85 +41,105 @@ OO
 
 
     </header>
-    <!-- La pagina principal está compuesta por 3 secciones -->
-    <!--En el primero colocamos lo mas vendido-->
-    <div class="flecha-top">
-        <a href="#">
-            <img src="./images/index/top-so-svgrepo-com.svg" alt="Icono de flecha hacia arriba" width="50" height="50">
-        </a>
-    </div>
-    <section class="contenido">
-        <div class="transicion-top">
-            <img src="./images/index/transicion.png" alt="Transicion a otra seccion" width="1920" height="226">
+    <main>
+        <!-- La pagina principal está compuesta por 3 secciones -->
+        <!--Simbolo de flecha para subir al inicio de la pagina-->
+        <div class="flecha-top">
+            <a href="#">
+                <img src="./images/index/top-so-svgrepo-com.svg" alt="Icono de flecha hacia arriba" width="50"
+                    height="50">
+            </a>
         </div>
-        <div >
-            <div class="info">
-                <h2>¡Tu universo TCG en un solo lugar!</h2>
-                <p>Explora nuestras colecciones de cartas de tus juegos favoritos.</p>
 
-            </div>
-            <div class="galeria-logos">
-                <img src="./images/index/pokemon-tgc-logo.png" alt="Logo Pokemon tgc" width="500" height="255">
-                <img src="./images/index/magic-tcg-logo.jpg" alt="Logo juego de cartas Magic " width="500" height="200">
-                <img src="./images/index/lorcana-logo.png" alt="Logo Lorcarna juego de cartas Disney" width="500"
-                    height="239">
-                <img src="./images/index/digimon-tgc-logo.png" alt="Logo Digimon juego de cartas" width="500" height="500">
-                <img src="./images/index/one-piece-logo.png" alt="Logo One Piece juego de cartas" width="500" height="500">
-                <img src="./images/index/yugioh-logo.png" alt="Logo Yu-Gi-Oh! juego de cartas" width="500" height="322">
-            </div>
-            <div class="transicion-bottom">
+        <!-- Sección de galería con logos de marcas TCG -->
+
+        <section class="contenido">
+            <div class="transicion-top">
                 <img src="./images/index/transicion.png" alt="Transicion a otra seccion" width="1920" height="226">
             </div>
-        </div>
+            <div>
+                <div class="info">
+                    <h2>¡Tu universo TCG en un solo lugar!</h2>
+                    <p>Explora nuestras colecciones de cartas de tus juegos favoritos.</p>
 
-    </section>
-    <section class="contenido background-gradient">
-        <div >
-            <div class="info">
-                <h2 class="top">Top ventas</h2>
-            </div>
-            <div class="top-ventas">
-                <a href="#">
-                    <img src="./images/productos/stitch-con-ukelele-disney-funko-pop.webp" alt="Funko Stich con ukelele"
-                        width="800" height="800">
-                </a>
-                <a href="./views/productos.html#pokemon">
-                    <img src="./images/productos/Pokemon-151-Ultra-Premium-Collection.webp"
-                        alt="Coleccion Pokemon 151 Ultra Premium" width="530" height="530">
-                </a>
-                <a href="./views/productos.html#one-piece">
-                    <img src="./images/productos/caja-sobres-one-piece-panini.jpg"
-                        alt="Caja de sobres de One piece 25 aniversario" width="2000" height="2000">
-                </a>
-
-            </div>
-        </div>
-    </section>
-    <section class="contenido background-gradient-2">
-        <div >
-            <div class="info">
-                <h2>¿Quienes somos?</h2>
-                <p class="quienes-somos">En Frikon nacimos de la pasión por los juegos de cartas, el coleccionismo y el
-                    universo friki en
-                    todas sus formas. Lo que empezó como un grupo de amigos intercambiando cartas Pokémon en una pequeña
-                    tienda local, pronto se convirtió en un proyecto con un objetivo claro: crear el espacio perfecto
-                    para todos los fans de lo épico, lo nostálgico y lo fantástico.
-                    <br><br>
-                    Nos dedicamos a ofrecer las mejores cartas TCG (como Pokémon, Magic, Yu-Gi-Oh!), además de figuras,
-                    juegos de mesa, merchandising exclusivo y mucho más. Queremos ser ese rincón donde cada visita te
-                    saque una sonrisa, ya sea porque encontraste esa carta que te faltaba o porque descubriste un nuevo
-                    universo que te apasiona.
-                    <br><br>
-                    En Frikon, no solo vendemos productos, creamos comunidad. Y tú ya formas parte de ella.
-                </p>
-                <img src="./images/index/tienda-frikon.png" alt="" width="1536" height="1024" class="img-tienda-frikon">
+                </div>
+                <div class="galeria-logos">
+                    <img src="./images/index/pokemon-tgc-logo.png" alt="Logo Pokemon tgc" width="500" height="255">
+                    <img src="./images/index/magic-tcg-logo.jpg" alt="Logo juego de cartas Magic " width="500"
+                        height="200">
+                    <img src="./images/index/lorcana-logo.png" alt="Logo Lorcarna juego de cartas Disney" width="500"
+                        height="239">
+                    <img src="./images/index/digimon-tgc-logo.png" alt="Logo Digimon juego de cartas" width="500"
+                        height="500">
+                    <img src="./images/index/one-piece-logo.png" alt="Logo One Piece juego de cartas" width="500"
+                        height="500">
+                    <img src="./images/index/yugioh-logo.png" alt="Logo Yu-Gi-Oh! juego de cartas" width="500"
+                        height="322">
+                </div>
+                <div class="transicion-bottom">
+                    <img src="./images/index/transicion.png" alt="Transicion a otra seccion" width="1920" height="226">
+                </div>
             </div>
 
-        </div>
+        </section>
+        <!-- Seccion donde colocamos unos enlaces con la imagen de nuestros productos mas vendidos, que nos llevará a la pagina productos donde se encuentra -->
+        <section class="contenido background-gradient">
+            <div>
+                <div class="info">
+                    <h2 class="top">Top ventas</h2>
+                </div>
+                <div class="top-ventas">
+                    <a href="#">
+                        <img src="./images/productos/stitch-con-ukelele-disney-funko-pop.webp"
+                            alt="Funko Stich con ukelele" width="800" height="800">
+                    </a>
+                    <a href="./views/productos.html#pokemon">
+                        <img src="./images/productos/Pokemon-151-Ultra-Premium-Collection.webp"
+                            alt="Coleccion Pokemon 151 Ultra Premium" width="530" height="530">
+                    </a>
+                    <a href="./views/productos.html#one-piece">
+                        <img src="./images/productos/caja-sobres-one-piece-panini.jpg"
+                            alt="Caja de sobres de One piece 25 aniversario" width="2000" height="2000">
+                    </a>
 
-    </section>
+                </div>
+            </div>
+        </section>
+        <!--  Sección sobre los orígenes de Frikon -->
+        <section class="contenido background-gradient-2">
+            <div>
+                <div class="info">
+                    <h2>¿Quienes somos?</h2>
+                    <p class="quienes-somos">En Frikon nacimos de la pasión por los juegos de cartas, el coleccionismo y
+                        el
+                        universo friki en
+                        todas sus formas. Lo que empezó como un grupo de amigos intercambiando cartas Pokémon en una
+                        pequeña
+                        tienda local, pronto se convirtió en un proyecto con un objetivo claro: crear el espacio
+                        perfecto
+                        para todos los fans de lo épico, lo nostálgico y lo fantástico.
+                        <br><br>
+                        Nos dedicamos a ofrecer las mejores cartas TCG (como Pokémon, Magic, Yu-Gi-Oh!), además de
+                        figuras,
+                        juegos de mesa, merchandising exclusivo y mucho más. Queremos ser ese rincón donde cada visita
+                        te
+                        saque una sonrisa, ya sea porque encontraste esa carta que te faltaba o porque descubriste un
+                        nuevo
+                        universo que te apasiona.
+                        <br><br>
+                        En Frikon, no solo vendemos productos, creamos comunidad. Y tú ya formas parte de ella.
+                    </p>
+                    <img src="./images/index/tienda-frikon.png" alt="" width="1536" height="1024"
+                        class="img-tienda-frikon">
+                </div>
+
+            </div>
+
+        </section>
+    </main>
     <footer>
-        <!-- EL footer se compone de una lista con los datos de la empresa, otro con el logo y nombre de la empresa y el tercero con los enlaces a redes-->
+        <!-- EL footer se compone de una lista con los datos de la empresa los cuales estan vinculados a enlaces, otro con el logo y nombre de la empresa y el tercero con los enlaces a redes-->
+        <!-- Lista con datos de la empresa-->
         <div class="direccion">
             <ul class="ul-direccion">
                 <li class="li-direccion">
@@ -149,22 +166,24 @@ OO
                 </li>
             </ul>
         </div>
-
+        <!-- Logo de la empresa-->
         <div class="footer-img">
             <img src="./images/index/logo-blanco.png" alt="logo cartas con fantasma de frikon" class="logo-old">
-            <p> &copy; 2025 Frikon tgc & más. </p>
+            <p> &copy; 2025 Frikon tcg & más. </p>
         </div>
-
+        <!-- Redes sociales-->
         <div class="redes">
             <ul class="ul-redes">
                 <li class="li-redes">
                     <a href="https://x.com" title="enlace a X" target="_blank">
-                        <img src="./images/index/icons8-x-logo.svg" alt="Logo de la red social X" width="2000" height="2000">
+                        <img src="./images/index/icons8-x-logo.svg" alt="Logo de la red social X" width="2000"
+                            height="2000">
                     </a>
                 </li>
                 <li class="li-redes">
                     <a href="https://facebook.com" title="enlace a Facebook" target="_blank">
-                        <img src="./images/index/facebook-svgrepo-com.svg" alt="Logo de Facebook" width="2000" height="2000">
+                        <img src="./images/index/facebook-svgrepo-com.svg" alt="Logo de Facebook" width="2000"
+                            height="2000">
                     </a>
                 </li>
                 <li class="li-redes">

@@ -301,7 +301,7 @@ div .quienes-somos {
 }
 
 .ul-contacto {
-    list-style: none;
+    list-style: circle;
     color: var(--background-primary);
     font-weight: bold;
 
@@ -411,7 +411,6 @@ div .quienes-somos {
 
 .item-galeria-productos:hover {
     transform: translateY(-10px);
-    /* Efecto de elevación al pasar el mouse */
     opacity: 1;
     cursor: pointer;
 }
@@ -442,7 +441,7 @@ div .quienes-somos {
 }
 
 
-.descripcion-producto p {
+.descripcion-producto h3 {
     text-align: center;
     font-weight: bold;
     color: var(--white);
@@ -468,6 +467,81 @@ div .quienes-somos {
 
 .item-galeria-productos:hover .descripcion-producto img {
     opacity: 0;
+}
+
+/* Contenido Presupuesto */
+.contenedor-formulario h2 {
+    margin-bottom: 2rem;
+}
+
+.contenido-formulario {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid var(--background-light);
+    border-radius: 10px;
+    background-color: var(--background-rose);
+}
+
+
+.contact-form label,
+.contact-form p {
+    font-weight: bold;
+    
+    color: var(--black);
+}
+
+.contact-form input,
+.contact-form textarea {
+    
+    padding: 0.6rem;
+    margin-bottom: 0.6rem;
+    border-radius: 0.6rem;
+    border: 1px solid var(--background-rose);
+
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.input-terminos {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    
+}
+.input-terminos input{
+    margin-top: 3px;
+}
+.contact-form input[type="submit"] {
+    background-color: var(--background-light);
+    color: var(--white);
+    padding: 0.6rem 1.2rem;
+    border: none;
+    transition: all .3s ease-in-out;
+    /* Transición suave para el hover */
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: var(--background-salmon);
+    cursor: pointer;
 }
 
 
@@ -523,7 +597,7 @@ footer {
     margin: 0.5rem 0;
 }
 
-.li-direccion {}
+
 
 /* logo */
 
@@ -744,7 +818,8 @@ footer {
 
 
     }
-    .info p{
+
+    .info p {
         text-align: center;
     }
 
@@ -774,7 +849,7 @@ footer {
 
     }
 
-   
+
 
     .producto-img {
         width: 350px;
@@ -804,7 +879,7 @@ footer {
 
     .descripcion-producto img {
         display: none;
-        
+
     }
 
 
@@ -1061,10 +1136,12 @@ footer {
         font-size: 1rem;
 
     }
-    .descripcion-producto img{
+
+    .descripcion-producto img {
         margin-top: 3rem;
     }
 
+  
 
     footer {
         background: linear-gradient(to right,
