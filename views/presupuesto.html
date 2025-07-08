@@ -52,16 +52,21 @@
                 <h2>Contacta con nosotros</h2>
                 <form class="contact-form">
                     <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" placeholder="Tu nombre" autocomplete="name" required>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" pattern="[A-Za-z\s]{3,}"
+                        title="Solo letras y al menos 3 caracteres" autocomplete="name" required>
                     <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" autocomplete="email"
-                        required>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico"
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                        title="Introduce un correo electrónico válido, por ejemplo: usuario@email.com"
+                        autocomplete="email" required>
                     <label for="telefono">Telefono</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Tu telefono" autocomplete="tel"
+                    <input type="tel" id="telefono" name="telefono" placeholder="Tu telefono"
+                        pattern="(\+34\s?)?[0-9\s\-]{9,}"
+                        title="Introduce un número de teléfono válido, con o sin prefijo +34" autocomplete="tel"
                         required>
                     <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" placeholder="Pregunta por cualquiera de nuestros productos"
-                        required></textarea>
+                    <textarea id="message" name="message" placeholder="Pregunta por cualquiera de nuestros productos" minlength="15" maxlength="500" title="El mensaje debe tener al menos 10 caracteres"
+                        required ></textarea>
                     <div class="input-terminos">
                         <input type="checkbox" id="check-menu-contacto" class="check-menu-contacto" required>
                         <p>Acepta los terminos y condiciones para continuar.</p>
@@ -82,30 +87,33 @@
                 <li class="li-direccion">
 
                     <a href="mailto:frikoncolecciones@gmail.com"><img src="../images/index/mail-alt-svgrepo-com.svg"
-                            alt="Icono mail" class="icon-direccion-footer"
-                            target="_blank">frikoncolecciones@gmail.com</a>
+                            alt="Icono mail" width="20" height="20"
+                            class="icon-direccion-footer">frikoncolecciones@gmail.com</a>
                 </li>
                 <li class="li-direccion">
 
                     <a href="tel:+34690598520"><img src="../images/index/phone-svgrepo-com.svg" alt="Icono telefono"
-                            class="icon-direccion-footer" target="_blank">690 598 520</a>
+                            width="20" height="20" class="icon-direccion-footer">690 598 520</a>
                 </li>
                 <li class="li-direccion">
 
                     <a href="./contacto.html#mapa"><img src="../images/index/location-pin-svgrepo-com.svg"
-                            alt="Icono localizacion mapa" class="icon-direccion-footer">C/Sevilla, 6, 29530 Alameda,
+                            alt="Icono localizacion mapa" width="20" height="20"
+                            class="icon-direccion-footer">C/Sevilla, 6, 29530 Alameda,
                         Málaga.</a>
                 </li>
                 <li class="li-direccion">
 
                     <a href="./contacto.html#aviso-legal"><img src="../images/index/warning-circle-svgrepo-com.svg"
-                            alt="Icono advertencia para aviso legal" class="icon-direccion-footer">Aviso legal</a>
+                            alt="Icono advertencia para aviso legal" width="20" height="20"
+                            class="icon-direccion-footer">Aviso legal</a>
                 </li>
             </ul>
         </div>
 
         <div class="footer-img">
-            <img src="../images/index/logo-blanco.png" alt="logo cartas con fantasma de frikon" class="logo-old">
+            <img src="../images/index/logo-blanco.png" alt="logo cartas con fantasma de frikon" width="500" height="500"
+                class="logo-old">
             <p> &#169; 2025 Frikon tcg & más. </p>
         </div>
 

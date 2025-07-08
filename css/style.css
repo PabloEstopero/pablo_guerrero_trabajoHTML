@@ -130,6 +130,7 @@ header {
 
 .transicion-top img {
     rotate: 180deg;
+    height: 225px;
     max-width: 100%;
     display: block;
     margin: 0;
@@ -552,6 +553,7 @@ div .quienes-somos {
     outline: none;
     border: 1px solid var(--background-light); 
 }
+
 
 
 
